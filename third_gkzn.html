@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- 工具条 -->
+    <link href="http://www.shanghai.gov.cn/jhelper_V2.0/jhelper_tool_style.css" rel="stylesheet" type="text/css" />
+    <noscript>不能读取jquery</noscript>
+    <script type="text/javascript" src="http://www.shanghai.gov.cn/jhelper_V2.0/zgsh/jhelper_config.js" charset="gb2312"></script>
+    <noscript>不能读取工具条配置</noscript>
+    <script type="text/javascript" src="http://www.shanghai.gov.cn/jhelper_V2.0/jhelper_2.0.js" charset="gb2312"></script>
+    <noscript>不能读取工具条</noscript>
+    <title>三级页面</title>
+    <style>
+        .MsoNormal a {
+            font-size: 14px;
+            COLOR: #0033CC;
+            TEXT-DECORATION: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 主体容器 -->
+    <div id="container">
+        <!-- 公共部分 -->
+        <div class="main_head">
+            <!-- 头部图片 -->
+            <div class="top mo_hide"></div>
+
+            <!-- 导航部分 -->
+            <div class="nav-abzw mo_hide" id="menu">
+                <ul id="nav">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="second.html">政务公开</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻综合</a>
+                        <ul>
+                            <li><a href="second_news.html">要讯</a></li>
+                            <li><a href="#">图片</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">政务服务</a>
+                        <ul>
+                            <li><a href="second_xzsp.html">行政审批</a></li>
+                            <li><a href="second_spzt.html">审批状态</a></li>
+                            <li><a href="second_zcfg.html">政策法规</a></li>
+                            <li><a href="second_message.html">在线投诉</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">互联互动</a>
+                        <ul>
+                            <li><a href="second_message.html">领导信箱</a></li>
+                            <li><a href="second_jjjc.html">纪检监察</a></li>
+                            <li><a href="second_message.html">网上信访</a></li>
+                            <li><a href="second_message.html">咨询服务</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">服务导航</a>
+                        <ul>
+                            <li><a href="second_news.html">通知公告</a></li>
+                            <li><a href="second_news.html">资料下载</a></li>
+                        </ul>
+
+                    </li>
+                    <li style="float:right;background:none">
+                        <a href="javascript:;" onclick="toggleToolBar()" title="无障碍浏览工具">无障碍</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 导航结束 -->
+
+            <!-- 搜索栏 -->
+            <div class="search_box mo_hide">
+                <div class="search">
+                    <div>
+                        <div class="line1">
+                            <img src="images/search.jpg" width="22" height="24" alt="">
+                            <label for="">站内搜索 : </label>
+                            <input type="text">
+                        </div>
+                        <div class="line2">
+                            <select class="search-b">
+                                <option>全站检索</option>
+                            </select>
+                            <input type="image" name="UCTop1$search" id="UCTop1_search" src="images/search-2.jpg" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 移动搜索栏 -->
+            <div class="search_box pc_hide">
+                <div class="search">
+                    <div>
+                        <div class="line1">
+                            <input class="m_input" type="text" placeholder="站内搜索">
+                            <select class="search-b">
+                                <option>全站检索</option>
+                            </select>
+                            <button>搜索</button>
+                        </div>
+                        <div class="line2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <!-- 移动端导航 -->
+            <div id="sui_nav" class="sui-nav hide">
+                <div class="sui-nav-wrapper nav-border nav-line">
+                    <ul class="pull-right">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="second.html">政务公开</a>
+                        </li>
+                        <li>
+                            <a href="#">新闻综合</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_news.html">要讯</a></li>
+                                <li><a href="second_news.html">图片</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">政务服务</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_xzsp.html">行政审批</a></li>
+                                <li><a href="second_spzt.html">审批状态</a></li>
+                                <li><a href="second_zcfg.html">政策法规</a></li>
+                                <li><a href="second_message.html">在线投诉</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">互联互动</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_message.html">领导信箱</a></li>
+                                <li><a href="second_jjjc.html">纪检监察</a></li>
+                                <li><a href="second_message.html">网上信访</a></li>
+                                <li><a href="second_message.html">咨询服务</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">服务导航</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_news.html">通知公告</a></li>
+                                <li><a href="second_news.html">资料下载</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container hide">
+                <div class="nav-second">
+                    <div id="sui_nav2" class="sui-nav">
+
+                    </div>
+                </div>
+            </div>
+            <div class="mo_nav pc_hide">
+                <button class="MenuOpen mo_btn"></button>
+                <p>上海市机关事务管理局</p>
+            </div>
+            <!-- 移动端导航 -->
+        </div>
+
+        <!-- 公共部分结束-->
+
+        <!-- 主体部分 -->
+        <div class="main_body">
+            <div class="second_content1">
+                <div class="word_nav">
+                    您现在的位置：首页 > 公开指南
+                </div>
+                <!-- <div class="sencond_search">
+                    <div>
+                        <input type="text">
+                        <input type="image" name="IMG1" id="IMG1" src="images/search-hui.jpg" style="height:28px;width:37px;border-width:0px;" />
+                    </div>
+                </div> -->
+                <div class="second_title">公开指南</div>
+                <div class="clear"></div>
+                <div class="content_box">
+                    <div class="third_box">
+                        <div class="third_title">上海市机关事务管理局 政府信息公开指南
+                        </div>
+                        <div class="third_content">
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 35.85pt; mso-char-indent-count: 2.24;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">一、政府信息公开受理机构<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">上海市机关事务管理局（以下简称市机管局或本局）办公室负责本局政府信息公开工作。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">办公地址：上海市黄浦区人民大道<span lang="EN-US">200</span>号综合楼<span lang="EN-US">405</span>室<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">办公时间：上午<span lang="EN-US">9</span>：<span lang="EN-US">00-11</span>：<span lang="EN-US">30</span>，下午<span lang="EN-US">1</span>：
+                                <span lang="EN-US">30-6</span>：<span lang="EN-US">00 </span>（节假日除外）<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">联系电话：<span lang="EN-US">021-2311</span><span lang="EN-US">3507</span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">传真电话：<span lang="EN-US">021-63584880<o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">邮政编码：<span lang="EN-US">200003<o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">电子邮箱：<span lang="EN-US"><a href="mailto:office@shjgj.gov.cn"><span style="color: black;">xxbs@shjgj.gov.cn</span></a>
+                                <o:p></o:p>
+                                </span>
+                                </span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">门户网站：<span lang="EN-US">http://www.shjgj.gov.cn<o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">二、主动公开政府信息的方式<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">本局主动公开的政府信息，应当根据不同情况采取以下一种或几种方式进行公开：<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 27pt;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（一）本局门户网站；<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 27pt;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（二）新闻发布会或其他有关会议；<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 27pt;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（三）广播、电视、报刊、杂志等新闻媒体；<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 27pt;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（四）其他便于公众及时准确获得信息的形式。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 21pt;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;"><span style="mso-spacerun: yes;">&nbsp;</span></span><span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">其中，本局门户网站是信息公开的主要方式，重大事项可通过局新闻发言人发布信息。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">三、主动公开的政府信息<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">本局向社会主动公开以下政府信息：<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（一）机构职能：局的概况、领导简介、内设机构和直属单位职责；<span lang="EN-US"> <o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（二）政策法规：本市机关事务管理工作的法律、法规、规章及政策性文件；<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（三）业务工作：</span><span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体; mso-ansi-language: ZH-CN;">行政审批项目目录、办理须知与流程等；</span>
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">
+                                    <o:p></o:p>
+                                    </span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（四）其他：其他依照法律、法规、规章和国家有关规定应当主动公开的信息。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">四、申请公开信息方式<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p align="left" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: left; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">申请人可根据《上海市政府信息公开规定》的要求提出申请，并填写《上海市机关事务管理局信息公开申请表》（以下简称《信息公开申请表》）。《信息公开申请表》可在市政府机管局网站 （<span lang="EN-US">http://www.shjgj.gov.cn</span>）下载、复制，或到受理机构领取。采取书面形式确有困难的，申请人可以口头提出，由本局办公室代为填写《信息公开申请表》。
+                                <span lang="EN-US">
+                                    <o:p></o:p>
+                                    </span>
+                                </span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（一）申请公开应填写的内容：<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">1</span><span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">、申请人姓名或名称、联系方式等；<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">　　<span lang="EN-US">2</span>、申请公开的政府信息的内容描述；<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">　　<span lang="EN-US">3</span>、申请公开的政府信息的形式要求；<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32.25pt;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">4</span><span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">、申请公开的目的和用途。　<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32.25pt;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（二）申请方式：<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">1</span><span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">、通过互联网提出申请<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">申请人在市政府机管局门户网站下载《信息公开申请表》并填写后，通过电子邮件方式发送至受理机构电子邮箱即可。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">2</span><span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">、书面申请<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（<span lang="EN-US">1</span>）直接到本局受理机构提出申请的 ，申请人应到现场填写《信息公开申请表》交工作人员。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">（<span lang="EN-US">2</span>）通过信函方式提出申请的 ，申请人应在市政府机管局门户网站下载《信息公开申请表》，填写打印后邮寄至市政府机管局，并请在信封左下角注明&ldquo;政府信息公开申请&rdquo;字样。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">3</span><span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">、通过传真方式提出申请的 ，将《信息公开申请表》填写后直接传真即可。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">五、申请的处理<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">本局受理机构在收到申请人填写的《信息公开申请表》后，能够当场答复的当场予以答复；不能当场答复的，在收到申请之日起<span lang="EN-US">15</span>个工作日予以答复（特殊情况需延长时间答复的，延长时间不超过<span lang="EN-US">15</span>个工作日，并告知申请人）。
+                                <span lang="EN-US">
+                                    <o:p></o:p>
+                                    </span>
+                                </span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">六、收费项目和收费标准<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">本局依申请向申请人提供政府信息，除按规定收取的检索、复制、邮寄等成本费用外，不收取其他费用。申请人确有经济困难要求减免费用的，可在《信息公开申请表》中提出申请。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">七、监督方式<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32pt; mso-char-indent-count: 2.0;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">申请人认为本局不依法履行政府信息公开义务的，可以向上级行政机关、监察机关或者政府信息公开工作主管部门举报。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32.25pt;">
+                                <span style="color: black; line-height: 200%; font-family: 黑体; font-size: 16pt;">八、行政复议与行政诉讼<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 200%; text-indent: 32.25pt;">
+                                <span style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;">申请人认为本局在政府信息公开工作中的具体行政行为侵犯其合法权益的，可以依法申请行政复议或者提起行政诉讼。<span lang="EN-US"><o:p></o:p></span></span>
+                            </p>
+                            <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center; line-height: 200%;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;"><o:p>&nbsp;</o:p></span></p>
+                            <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center; line-height: 200%;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;"><o:p><a href="/JGJPortal/UserFilesPath/附件：上海市人民政府机关事务管理局信息公开申请表.doc">附件：市机管局信息公开申请表</a></o:p><o:p><a href="/JGJPortal/UserFilesPath/附件：上海市人民政府机关事务管理局信息公开申请表.doc">（请点击下载）</a>&nbsp;</o:p></span></p>
+                            <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center; line-height: 200%;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;"><o:p>&nbsp;</o:p></span></p>
+                            <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center; line-height: 200%;">
+                                <span lang="EN-US" style="color: black; line-height: 200%; font-family: 仿宋_GB2312; font-size: 16pt;"><o:p>&nbsp;</o:p></span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分结束-->
+        <!-- 底部 -->
+        <div class="bottom">
+            <div>
+                <a href="http://bszs.conac.cn/sitename?method=show&id=09334CFBF2611B73E053012819AC36F0" target="_blank">
+                    <img src="images/zdbs.png" alt="">
+                </a>
+                <div>
+                    <span style="font-weight: 800; font-size: 14px;">版权所有：上海市机关事务管理局</span>
+                    <div style="margin-top:5px;">
+                        累计访问数：<span style="color: #C00;" id="pc_1"></span> 本年度访问：<span style="color: #C00;" id="pcm_1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sui-nav-mask"></div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+</body>
+
+</html>

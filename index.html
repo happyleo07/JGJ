@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- 工具条 -->
+    <link href="http://www.shanghai.gov.cn/jhelper_V2.0/jhelper_tool_style.css" rel="stylesheet" type="text/css" />
+    <noscript>不能读取jquery</noscript>
+    <script type="text/javascript" src="http://www.shanghai.gov.cn/jhelper_V2.0/zgsh/jhelper_config.js" charset="gb2312"></script>
+    <noscript>不能读取工具条配置</noscript>
+    <script type="text/javascript" src="http://www.shanghai.gov.cn/jhelper_V2.0/jhelper_2.0.js" charset="gb2312"></script>
+    <noscript>不能读取工具条</noscript>
+    <title>首页</title>
+</head>
+
+<body>
+    <!-- 主体容器 -->
+    <div id="container">
+        <!-- 公共部分 -->
+        <div class="main_head">
+            <!-- 头部图片 -->
+            <div class="top mo_hide"></div>
+
+            <!-- 导航部分 -->
+            <div class="nav-abzw mo_hide" id="menu">
+                <ul id="nav">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="second.html">政务公开</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻综合</a>
+                        <ul>
+                            <li><a href="second_news.html">要讯</a></li>
+                            <li><a href="#">图片</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">政务服务</a>
+                        <ul>
+                            <li><a href="second_xzsp.html">行政审批</a></li>
+                            <li><a href="second_spzt.html">审批状态</a></li>
+                            <li><a href="second_zcfg.html">政策法规</a></li>
+                            <li><a href="second_message.html">在线投诉</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">互联互动</a>
+                        <ul>
+                            <li><a href="second_message.html">领导信箱</a></li>
+                            <li><a href="second_jjjc.html">纪检监察</a></li>
+                            <li><a href="second_message.html">网上信访</a></li>
+                            <li><a href="second_message.html">咨询服务</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">服务导航</a>
+                        <ul>
+                            <li><a href="second_news.html">通知公告</a></li>
+                            <li><a href="second_news.html">资料下载</a></li>
+                        </ul>
+
+                    </li>
+                    <li style="float:right;background:none">
+                        <a href="javascript:;" onclick="toggleToolBar()" title="无障碍浏览工具">无障碍</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 导航结束 -->
+
+            <!-- 搜索栏 -->
+            <div class="search_box mo_hide">
+                <div class="search">
+                    <div>
+                        <div class="line1">
+                            <img src="images/search.jpg" width="22" height="24" alt="">
+                            <label for="">站内搜索 : </label>
+                            <input type="text">
+                        </div>
+                        <div class="line2">
+                            <select class="search-b">
+                                <option>全站检索</option>
+                            </select>
+                            <input type="image" name="UCTop1$search" id="UCTop1_search" src="images/search-2.jpg" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 移动搜索栏 -->
+            <div class="search_box pc_hide">
+                <div class="search">
+                    <div>
+                        <div class="line1">
+                            <input class="m_input" type="text" placeholder="站内搜索">
+                            <select class="search-b">
+                                <option>全站检索</option>
+                            </select>
+                            <button>搜索</button>
+                        </div>
+                        <div class="line2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <!-- 移动端导航 -->
+            <div id="sui_nav" class="sui-nav hide">
+                <div class="sui-nav-wrapper nav-border nav-line">
+                    <ul class="pull-right">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="second.html">政务公开</a>
+                        </li>
+                        <li>
+                            <a href="#">新闻综合</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_news.html">要讯</a></li>
+                                <li><a href="second_news.html">图片</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">政务服务</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_xzsp.html">行政审批</a></li>
+                                <li><a href="second_spzt.html">审批状态</a></li>
+                                <li><a href="second_zcfg.html">政策法规</a></li>
+                                <li><a href="second_message.html">在线投诉</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">互联互动</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_message.html">领导信箱</a></li>
+                                <li><a href="second_jjjc.html">纪检监察</a></li>
+                                <li><a href="second_message.html">网上信访</a></li>
+                                <li><a href="second_message.html">咨询服务</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">服务导航</a>
+                            <span>></span>
+                            <ul>
+                                <li><a href="second_news.html">通知公告</a></li>
+                                <li><a href="second_news.html">资料下载</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container hide">
+                <div class="nav-second">
+                    <div id="sui_nav2" class="sui-nav">
+
+                    </div>
+                </div>
+            </div>
+            <div class="mo_nav pc_hide">
+                <button class="MenuOpen mo_btn"></button>
+                <p>上海市机关事务管理局</p>
+            </div>
+            <!-- 移动端导航 -->
+        </div>
+
+        <!-- 公共部分结束-->
+
+        <!-- 主体部分 -->
+        <div class="main_body">
+            <!-- 信息展示栏开始 -->
+            <div class="new-yaoxun">
+                <!-- 新闻轮播部分 -->
+                <div class="news mo_hide">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td bgcolor="#FFD8A5" valign="top">
+                                <script language="javascript" type="text/javascript">
+                                    var imgWidth = 355; //图片宽
+                                    var imgHeight = 213; //图片高
+                                    var textFromHeight = 30; //焦点字框高度 (单位为px)
+                                    var textStyle = "AhrefBlack"; //焦点字class style (不是连接class)
+                                    var textLinkStyle = "whiter"; //焦点字连接class style
+                                    var buttonLineOn = "#f60"; //button下划线on的颜色
+                                    var buttonLineOff = "#000"; //button下划线off的颜色
+                                    var TimeOut = 5000; //每张图切换时间 (单位毫秒);
+                                    var imgUrl = new Array();
+                                    var imgLink = new Array();
+                                    var imgText = new Array();
+                                    var imgAlt = new Array();
+                                    var adNum = 0;
+                                    //焦点字框高度样式表 开始
+                                    document.write('<style type="text/css">');
+                                    document.write('#focuseFrom{width:' + (imgWidth + 2) + ';margin: 0px; padding:0px;height:' + (imgHeight + textFromHeight) + 'px; overflow:hidden;}');
+                                    document.write('#txtFrom{height:' + textFromHeight + 'px;line-height:' + textFromHeight + 'px;width:' + imgWidth + 'px;overflow:hidden;}');
+                                    document.write('#imgTitle{width:' + imgWidth + ';top:-' + (textFromHeight + 18) + 'px;height:18px}');
+                                    document.write('</style>');
+                                    document.write('<div id="focuseFrom">');
+                                    //焦点字框高度样式表 结束
+
+
+
+                                    imgUrl[1] = 'images/newImg/1.jpg';
+                                    imgText[1] = '<a target="blank" href="#" title="市机管局传达学习党的十九大精神会议">市机管局传达学习党的十九大精神会议</a>';
+                                    imgLink[1] = '#';
+                                    imgAlt[1] = '市机管局传达学习党的十九大精神会议';
+                                    imgUrl[2] = 'images/newImg/2.jpg';
+                                    imgText[2] = '<a target="blank" href="#" title="市机管局党组中心组（扩大）学习">市机管局党组中心组（扩大）学习</a>';
+                                    imgLink[2] = '#';
+                                    imgAlt[2] = '市机管局党组中心组（扩大）学习';
+                                    imgUrl[3] = 'images/newImg/3.jpg';
+                                    imgText[3] = '<a target="blank" href="#" title="市机管局干部职工集中收看党的十九大开幕会">市机管局干部职工集中收看党的十九大开幕会</a>';
+                                    imgLink[3] = '#';
+                                    imgAlt[3] = '市机管局干部职工集中收看党的十九大开幕会';
+                                    imgUrl[4] = 'images/newImg/4.jpg';
+                                    imgText[4] = '<a target="blank" href="#" title="市机管局“争当排头兵 喜迎十九大”主题系列活动闭幕式">市机管局“争当排头兵 喜迎十九大”主题系列活动闭幕式</a>';
+                                    imgLink[4] = '#';
+                                    imgAlt[4] = '市机管局“争当排头兵 喜迎十九大”主题系列活动闭幕式';
+                                    imgUrl[5] = 'images/newImg/5.jpg';
+                                    imgText[5] = '<a target="blank" href="#" title="上海机关事务标准化建设动员会">上海机关事务标准化建设动员会</a>';
+                                    imgLink[5] = '#';
+                                    imgAlt[5] = '上海机关事务标准化建设动员会';
+                                    imgUrl[6] = 'images/newImg/6.jpg';
+                                    imgText[6] = '<a target="blank" href="#" title="全国公共机构能耗定额管理和重点用能单位节能管理研讨会">全国公共机构能耗定额管理和重点用能单位节能管理研讨会</a>';
+                                    imgLink[6] = '#';
+                                    imgAlt[6] = '全国公共机构能耗定额管理和重点用能单位节能管理研讨会';
+                                    imgUrl[7] = 'images/newImg/7.jpg';
+                                    imgText[7] = '<a target="blank" href="#" title="市机管局局务会议暨2017年上半年工作总结会">市机管局局务会议暨2017年上半年工作总结会</a>';
+                                    imgLink[7] = '#';
+                                    imgAlt[7] = '市机管局局务会议暨2017年上半年工作总结会';
+
+                                    //imgUrl[1]='http://www.pcgames.com.cn/games/tt/images/picpath/pcgames20070113newgame01.jpg';
+                                    //imgtext[1]='<a href="http://ng.pcgames.com.cn/" target="_blank" class=linkblack>内测募集</a>';
+                                    //imgLink[1]='http://ng.pcgames.com.cn/';
+                                    //imgAlt[1]='内测募集12';
+
+                                    function changeimg(n) {
+                                        adNum = n;
+                                        window.clearInterval(theTimer);
+                                        adNum = adNum - 1;
+                                        nextAd();
+                                    }
+
+                                    function goUrl() {
+                                        window.open(imgLink[adNum], '_blank');
+                                    }
+                                    //NetScape开始
+                                    if (navigator.appName == "Netscape") {
+
+                                        document.write('<style type="text/css">');
+                                        document.write('.buttonDiv{height:4px;width:21px;}');
+                                        document.write('</style>');
+
+                                        function nextAd() {
+                                            if (adNum < (imgUrl.length - 1)) {
+                                                adNum++;
+                                            } else {
+                                                adNum = 1;
+                                            }
+                                            theTimer = setTimeout("nextAd()", TimeOut);
+                                            document.images.imgInit.src = imgUrl[adNum];
+                                            document.images.imgInit.alt = imgAlt[adNum];
+                                            document.getElementById('focustext').innerHTML = imgText[adNum];
+                                            document.getElementById('imgLink').href = imgLink[adNum];
+
+                                        }
+                                        document.write('<a id="imgLink" href="' + imgLink[1] + '" target=_blank class="p1"><img src="' + imgUrl[1] + '" name="imgInit" width=' + imgWidth + ' height=' + imgHeight + ' border=1 alt="' + imgAlt[1] + '" class="imgClass"></a><div id="txtFrom"><span id="focustext" class="' + textStyle + '">' + imgText[1] + '</span></div>')
+                                        document.write('<div id="imgTitle">');
+                                        document.write('<div id="imgTitle_down">');
+                                        //数字按钮代码开始
+                                        for (var i = 1; i < imgUrl.length; i++) {
+                                            document.write('<a href="javascript:changeimg(' + i + ')" class="button" style="cursor:hand" title="' + imgAlt[i] + '">' + i + '</a>');
+                                        }
+                                        //数字按钮代码结束
+                                        document.write('</div>');
+                                        document.write('</div>');
+                                        document.write('</div>');
+                                        nextAd();
+                                    }
+                                    //NetScape结束
+                                    //IE开始
+                                    else {
+                                        var count = 0;
+                                        for (i = 1; i < imgUrl.length; i++) {
+                                            if ((imgUrl[i] != "") && (imgLink[i] != "") && (imgText[i] != "") && (imgAlt[i] != "")) {
+                                                count++;
+                                            } else {
+                                                break;
+                                            }
+                                        }
+
+                                        function playTran() {
+                                            if (document.all)
+                                                document.images.imgInit.filters.revealTrans.play();
+                                        }
+
+                                        var key = 0;
+
+                                        function nextAd() {
+
+                                            if (count == 0) {
+                                                return;
+                                            }
+
+                                            if (adNum < count) {
+                                                adNum++;
+                                            } else {
+                                                adNum = 1;
+                                            }
+
+                                            if (key == 0) {
+                                                key = 1;
+                                            } else if (document.all) {
+                                                document.images.imgInit.filters.revealTrans.Transition = 23;
+                                                document.images.imgInit.filters.revealTrans.apply();
+                                                playTran();
+                                            }
+                                            document.images.imgInit.src = imgUrl[adNum];
+                                            document.images.imgInit.alt = imgAlt[adNum];
+                                            document.getElementById('link' + adNum).style.background = buttonLineOn;
+                                            for (var i = 1; i <= count; i++) {
+                                                if (i != adNum) {
+                                                    document.getElementById('link' + i).style.background = buttonLineOff;
+                                                }
+                                            }
+                                            focustext.innerHTML = imgText[adNum];
+                                            theTimer = setTimeout("nextAd()", TimeOut);
+                                        }
+
+                                        document.write('<a target=_self href="javascript:goUrl()"><img style="FILTER: revealTrans(duration=1,transition=5);" src="' + imgUrl[1] + '" width=' + imgWidth + ' height=' + imgHeight + ' border=0 vspace="0" name=imgInit class="imgClass"></a><br>');
+                                        document.write('<div id="txtFrom" class="' + textStyle + '"><span id="focustext" ></span></div>');
+                                        document.write('<div id="imgTitle">');
+                                        document.write(' <div id="imgTitle_down"> <a class="trans"></a>');
+                                        //数字按钮代码开始
+                                        for (var i = 1; i < imgUrl.length; i++) {
+                                            document.write('<a id="link' + i + '"   href="javascript:changeimg(' + i + ')" class="button" style="cursor:hand" title="' + imgAlt[i] + '" onFocus="this.blur()">' + i + '</a>');
+                                        }
+                                        //数字按钮代码结束
+                                        document.write('</div>');
+                                        document.write('</div>');
+                                        document.write('</div>');
+                                        document.write('</div>');
+
+                                        nextAd();
+                                    }
+
+
+
+                                    //IE结束
+                                </script>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+                <!-- 移动端轮播图 -->
+                <div class="swiper-container mo_news pc_hide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/newImg/1.jpg" alt="">
+                                <p>市机管局传达学习党的十九大精神会议</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/newImg/2.jpg" alt="">
+                                <p>市机管局党组中心组（扩大）学习</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/newImg/3.jpg" alt="">
+                                <p>市机管局干部职工集中收看党的十九大开幕会</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/newImg/4.jpg" alt="">
+                                <p>市机管局“争当排头兵 喜迎十九大”主题系列活动闭幕式</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/newImg/5.jpg" alt="">
+                                <p>全国公共机构能耗定额管理和重点用能单位节能管理研讨会</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/newImg/6.jpg" alt="">
+                                <p>市机管局局务会议暨2017年上半年工作总结会</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/newImg/7.jpg" alt="">
+                                <p>上海机关事务标准化建设动员会</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- 如果需要导航按钮 -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                    <!-- 移动端轮播图 -->
+
+                </div>
+                <!-- 新闻轮播部分 -->
+                <!-- 要训 -->
+
+                <div class="yaoxun">
+                    <div class="yaoxun-title">
+                        <i></i>
+                        <h3>要训</h3>
+                        <a href="#" target="_blank">更多></a>
+                    </div>
+                    <ul class="yaoxun-list">
+                        <li>
+                            <i></i>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 要训 -->
+                <!-- 通道 -->
+                <div class="tongdao">
+                    <div class="tongdao-a">
+                        <a href="#" target="_blank">
+                            <img src="images/index/xingzhengshenpi.jpg" /></a>
+                    </div>
+                    <div class="tongdao-a">
+                        <a href="#" target="_blank">
+                            <img src="images/index/shenpizhuangtai.jpg" /></a>
+                    </div>
+                    <div class="tongdao-a">
+                        <a href="#" target="_blank">
+                            <img src="images/index/zhengcefagui.jpg" /></a>
+                    </div>
+                    <div class="tongdao-a">
+                        <a href="#" target="_blank">
+                            <img src="images/index/zaixiantousu.jpg" /></a>
+                    </div>
+                </div>
+                <!-- 通道 -->
+
+
+            </div>
+            <!-- 信息展示栏结束 -->
+
+            <!-- 公告 -->
+            <div class="kuaijie-gonggao">
+                <div class="kuaijie-left">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <img src="images/index/kj-1.png" alt="">
+                                </div>
+                                <p>公开指南</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <img src="images/index/kj-2.png" alt="">
+                                </div>
+                                <p>公开目录</p>
+                            </a>
+                        </li>
+                        <li style="width:149px;">
+                            <a href="#" target="_blank">
+                                <div style="width:149px;">
+                                    <img src="images/index/kj-3.png" alt="">
+                                </div>
+                                <p style="width:148px;">依申请公开</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <img src="images/index/kj-4.png" alt="">
+                                </div>
+                                <p>最新公开</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <img src="images/index/kj-5.png" alt="">
+                                </div>
+                                <p>资料下载</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- 通知公告 -->
+
+                <div class="tzgg">
+                    <div class="tzgg-title">
+                        <h3>通知公告</h3>
+                        <a href="#" target="_blank">更多></a>
+                    </div>
+                    <ul class="tzgg-list">
+                        <li>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="市机管局召开年度机关运行成本统计会议">市机管局召开年度机关运行成本统计会议</a>
+                            <span>[2017-12-11]</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 通知公告 -->
+            </div>
+            <!-- 公告 -->
+
+            <!-- 职能/信箱 -->
+            <div class="jld">
+                <div class="jld-1">
+                    <img class="pc_hide" src="images/index/mo_jgzn-bg.png" alt="">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i></i>
+                                <p>机构职能</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i></i>
+                                <p>局内领导</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i></i>
+                                <p>机构设置</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" target="_blank">
+                                <i></i>
+                                <p>人事任免</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i></i>
+                                <p>直属单位</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="jld-3-new">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"><img src="images/index/jd_1.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img src="images/index/jd_2.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img src="images/index/jd_3.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img src="images/index/jd_4.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 职能/信箱 -->
+
+            <!-- 友情链接 -->
+            <div class="link">
+                <div class="pc_hide">
+                    <h3>友情链接</h3>
+                </div>
+                <ul>
+                    <li><a href="#" target="_blank">中国上海>></a></li>
+                    <li><a href="#" target="_blank">国务院机关事务管理局>></a></li>
+                    <li><a href="#" target="_blank">上海市政府采购中心>></a></li>
+                    <li><a href="#" target="_blank">孙中山宋庆龄文物管理委员会>></a></li>
+                    <li><a href="#" target="_blank">上展中心（集团）>></a></li>
+                    <li><a href="#" target="_blank">上勤集团>></a></li>
+                </ul>
+            </div>
+            <!-- 友情链接 -->
+        </div>
+        <!-- 主体部分结束-->
+
+        <!-- 底部 -->
+        <div class="bottom">
+            <div>
+                <a href="http://bszs.conac.cn/sitename?method=show&id=09334CFBF2611B73E053012819AC36F0" target="_blank">
+                    <img src="images/zdbs.png" alt="">
+                </a>
+                <div>
+                    <span style="font-weight: 800; font-size: 14px;">版权所有：上海市机关事务管理局</span>
+                    <div style="margin-top:5px;">
+                        累计访问数：<span style="color: #C00;" id="pc_1"></span> 本年度访问：<span style="color: #C00;" id="pcm_1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sui-nav-mask"></div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <!-- 图片轮播 -->
+    <script type="text/javascript" src="js/newsPic.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                // 如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // 如果需要前进后退按钮
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
+
+                // 如果需要滚动条
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                // },
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
